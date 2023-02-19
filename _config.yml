@@ -1,16 +1,16 @@
 # SITE CONFIGURATION
 baseurl: ""
-url: "https://www.adspthepodcast.com"
+url: "https://www.runforthefunofit.com"
 
 # THEME-SPECIFIC CONFIGURATION
-title: "ADSP: The Podcast"                                   # site's title
-description: "Conor Hoekstra & Bryce Adelstein Lelbach"      # used by search engines
-avatar: assets/img/pexels/adsp_white_on_red.png              # Empty for no avatar in navbar
-favicon: assets/img/pexels/adsp_white_on_red.png             # Icon displayed in the tab
+title: "RUN FOR THE FUN OF IT!"                                   # site's title
+description: "Conor Hoekstra & YüBaí Liu"      # used by search engines
+avatar: assets/img/pexels/funrun.png              # Empty for no avatar in navbar
+favicon: assets/img/pexels/funrun.png             # Icon displayed in the tab
 
 # Header and footer text
-header_text: "ADSP: The Podcast"  # Change Blog header text
-header_feature_image: assets/img/pexels/adsp2.png
+header_text: "RUN FOR THE FUN OF IT!"  # Change Blog header text
+header_feature_image: assets/img/pexels/funrun_header.png
 footer_text: ""
 
 # Blog
