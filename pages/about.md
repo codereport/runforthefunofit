@@ -20,4 +20,6 @@ Conor (he/him) started recreationally running back in university (~2010). When h
 
 ### YüBaí Liu
 
+**Strava:** [Link](https://www.strava.com/athletes/102365031)
+
 Yubai (he/him) began competitive running in 2007, as part of Simon Fraser University’s Varsity Track & Field team. He competed for 5 years in the [NAIA](https://www.naia.org/landing/index) and [NCAA](https://www.ncaa.com/), specializing in the 800m. Post university, he runs casually and participates in various rec sports. He has taken the last few years off from running but come along for the journey as he slowly, and casually, gets back into the sport. Compared to his cohost, he knows nothing about computers but will chime in with pop culture references and trashy TV show recommendations.
