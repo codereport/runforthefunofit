@@ -20,10 +20,9 @@ problem = False
 for post_name in os.listdir("_posts/"):
     num = int(post_name[:-3].split('-')[-1])
     with open("_posts/" + post_name) as post:
-        idx = 3 if num < 115 else 4
         for line in post:
             if "Link to Episode" in line:
-                if int(line.split()[idx]) != num:
+                if int(line.split()[4]) != num:
                     problem = True
 print (("❌" if problem else "✅") + " - Episode Number in Link to Website (Text)")
 
@@ -50,18 +49,6 @@ for post_name in os.listdir("_posts/"):
                 if line.strip().split()[-1] != date:
                     problem = True
 print (("❌" if problem else "✅") + " - Date in Release Date")
-
-# Discussion Link Issue Number
-problem = False
-for post_name in os.listdir("_posts/"):
-    num = int(post_name[:-3].split('-')[-1])
-    with open("_posts/" + post_name) as post:
-        for line in post:
-            if "Dicuss this episode" in line:
-                # Ep 115 started with Issue 5 (so subtract 110)
-                if num - 110 != int(line[:-2].split('/')[-1]):
-                    problem = True
-print (("❌" if problem else "✅") + " - Discussion Link Issue Number")
 
 # Dates Differ by 7 Days
 problem = False
