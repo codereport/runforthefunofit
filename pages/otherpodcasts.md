@@ -5,23 +5,19 @@ permalink: /podcasts/
 feature-img: "assets/img/pexels/funrun_header.png"
 ---
 
-List of other podcasts.
+List of other running podcasts.
 
 * ✅ - Active
-* ⚠️ - No episodes in over 6 months
 * ⛔ - Not active (retired or no episodes in over 1 year)
-* 🏴‍☠️ - No longer hosted / accessible
 
-#### C++ Podcasts 
+|                                          Podcast                                          | Type  | Active | # of Ep | Frequency |  Est.   | Subs* | Views* |
+| :---------------------------------------------------------------------------------------: | :---: | :----: | :-----: | :-------: | :-----: | :---: | :----: |
+|           [Run to the Top Podcast](https://runnersconnect.net/running-podcast/)           | Coach |   ✅    |   578   |     ?     | 2012-09 | 8.7k  | 274.2k |
+|          [Nobody Asked Us](https://open.spotify.com/show/68gjR5AX6S81rZCqCgYhCc)          |  Pro  |   ✅    |    5    |     ?     | 2023-01 |  847  |  2.4k  |
+|        [The Citius Mag Podcast](https://citiusmag.com/series/citius-mag-podcast/)         | News  |   ✅    |   421   |     ?     | 2017-02 |  437  | 25.9k  |
+|                              [Coffe Club](https://cpp.chat/)                              |  Pro  |   ✅    |   72    |     ?     | 2021-09 |  56   |  3.2k  |
+| [The Price of a Mile](http://citiusmag.com/podcast/price-mile-podcast-andrew-bumbalough/) |  Pro  |   ⛔    |   11    |     ?     | 2017-03 |  38   |  192   |
+| [The FloTrack Podcast](https://www.flotrack.org/collections/6751451-the-flotrack-podcast) | News  |   ✅    |   579   | triweekly | 2020-02 |  28   |  3.3k  |
+|         [The Halfstep Pod](https://open.spotify.com/show/2IMjzQbg4BLuKDM9YqWmOo)          |  Pro  |   ✅    |   33    |     ?     | 2021-03 |  19   |  622   |
 
-|                          Podcast                           | Active | # of Ep | Frequency  |  Est.   | Subs* | Views* | Sub Δ | Views Δ |
-| :--------------------------------------------------------: | :----: | :-----: | :--------: | :-----: | :---: | :----: | :---: | :-----: |
-|              [CppCast](https://cppcast.com/)               |   ✅    |   352   |  biweekly  | 2015-02 | 3.0k  | 92.4k  |   -   |  +1000  |
-|               [cpp.chat](https://cpp.chat/)                |   ⛔    |   59    |            | 2018-04 |  272  |  4.1k  |   -   |    -    |
-|            [ADSP](https://adspthepodcast.com/)             |   ✅    |   113   |   weekly   | 2020-11 |  260  |  8.5k  |  +11  |  +600   |
-|    [Two's Complement](https://www.twoscomplement.org/)     |   ✅    |   31    |  ~monthly  | 2020-12 |  76   |  2.1k  |  +3   |  +100   |
-|                [TLB HIT](https://tlbh.it/)                 |   ⚠️    |    5    | ~4-monthly | 2020-11 |  52   |  344   |   -   |   +4    |
-| [No Diagnostic Required](https://nodiagnosticrequired.tv/) |   ⛔    |   15    |            | 2020-12 |  25   |  381   |   -   |   +1    |
-|              [C++ Club](https://cppclub.uk/)               |   ✅    |   32    | ~biweekly  | 2021-04 |  20   |  422   |  +1   |   +47   |
-
-\* Only in the [CastBox](https://castbox.fm/) podcast app (excluding other apps) as of 2023/01/22
+\* Only in the [CastBox](https://castbox.fm/) podcast app (excluding other apps) as of 2023/02/22
