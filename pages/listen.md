@@ -12,7 +12,7 @@ feature-img: "assets/img/pexels/funrun_header.png"
 |     Spotify      |                          [Link](https://open.spotify.com/show/1Tc78jY0jNdrzwMlGsSXm4)                          |
 |  Apple Podcasts  |                [Link](https://podcasts.apple.com/us/podcast/run-for-the-fun-of-it/id1673053550)                |
 |  Google Podcast  |
-|     Overcast     |
+|     Overcast     |                                      [Link to App](https://overcast.fm/)                                       |
 |      Castro      |                     [Link](https://castro.fm/podcast/4346a072-3a42-499a-ad52-fc9645a02785)                     |
 |     Castbox      |
 |   Pocket Casts   |                                        [Link](https://pca.st/61a4me1e)                                         |
@@ -28,3 +28,4 @@ feature-img: "assets/img/pexels/funrun_header.png"
 | Podcast Republic |
 |     Pandora      |
 |     GoodPods     |                       [Link](https://goodpods.com/podcasts/run-for-the-fun-of-it-248005)                       |
+|   Amazon Music   |      [Link](https://music.amazon.com/podcasts/1bba227b-23d8-4da7-af36-8f43aeb4b1ba/run-for-the-fun-of-it)      |
