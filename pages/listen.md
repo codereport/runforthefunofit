@@ -16,7 +16,7 @@ feature-img: "assets/img/pexels/funrun_header.png"
 |      Castro      |                     [Link](https://castro.fm/podcast/4346a072-3a42-499a-ad52-fc9645a02785)                     |
 |     Castbox      |                            [Link](https://castbox.fm/channel/id5324060?country=us)                             |
 |   Pocket Casts   |                                        [Link](https://pca.st/61a4me1e)                                         |
-|    Podfriend     |
+|    Podfriend     |                              [Link](https://web.podfriend.com/podcast/1673053550)                              |
 |  Podcast Addict  |                               [Link](https://podcastaddict.com/podcast/4284635)                                |
 |    Podchaser     |                    [Link](https://www.podchaser.com/podcasts/run-for-the-fun-of-it-5094182)                    |
 |      Deezer      |                                 [Link](https://www.deezer.com/us/show/5754627)                                 |
