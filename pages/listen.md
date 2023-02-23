@@ -11,7 +11,7 @@ feature-img: "assets/img/pexels/funrun_header.png"
 | :--------------: | :------------------------------------------------------------------------------------------------------------: |
 |     Spotify      |                          [Link](https://open.spotify.com/show/1Tc78jY0jNdrzwMlGsSXm4)                          |
 |  Apple Podcasts  |                [Link](https://podcasts.apple.com/us/podcast/run-for-the-fun-of-it/id1673053550)                |
-|  Google Podcast  |
+|  Google Podcast  |       [Link](https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8yMTM4MDMyLnJzcw==)        |
 |     Overcast     |                                      [Link to App](https://overcast.fm/)                                       |
 |      Castro      |                     [Link](https://castro.fm/podcast/4346a072-3a42-499a-ad52-fc9645a02785)                     |
 |     Castbox      |                            [Link](https://castbox.fm/channel/id5324060?country=us)                             |
@@ -23,9 +23,7 @@ feature-img: "assets/img/pexels/funrun_header.png"
 |   Listen Notes   | [Link](https://www.listennotes.com/podcasts/run-for-the-fun-of-it-conor-hoekstra-y%C3%BCba%C3%AD-vrVqT2hJLjk/) |
 |    Player FM     |                             [Link](https://player.fm/series/run-for-the-fun-of-it)                             |
 |  Podcast Index   |                                [Link](https://podcastindex.org/podcast/6049352)                                |
-|    BeyondPod     |
-|     DownCast     |
+|     DownCast     |                                  [Link to App](https://www.downcastapp.com/)                                   |
 | Podcast Republic |                           [Link](https://www.podcastrepublic.net/podcast/1673053550)                           |
-|     Pandora      |
 |     GoodPods     |                       [Link](https://goodpods.com/podcasts/run-for-the-fun-of-it-248005)                       |
 |   Amazon Music   |      [Link](https://music.amazon.com/podcasts/1bba227b-23d8-4da7-af36-8f43aeb4b1ba/run-for-the-fun-of-it)      |
