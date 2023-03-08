@@ -16,6 +16,7 @@ List of running podcasts.
 |          [Nobody Asked Us](https://open.spotify.com/show/68gjR5AX6S81rZCqCgYhCc)          |  Pro  |   ✅    |    5    | ~biweekly | 2023-01 |  847  |  2.4k  |
 |        [The Citius Mag Podcast](https://citiusmag.com/series/citius-mag-podcast/)         | News  |   ✅    |   421   | ~2x week  | 2017-02 |  437  | 25.9k  |
 |      [The Sweat Elite Podcast](https://open.spotify.com/show/3Tm74baRP1IXwmPuk0TTxg)      | Coach |   ✅    |   99    | ~monthly  | 2018-02 |  335  | 11.3k  |
+|                  [Some Work, All Play](https://swaprunning.com/podcast)                   | Coach |   ✅    |   148   |  weekly   | 2020-06 |  322  | 23.4k  |
 |       [The Shakeout Podcast](https://runningmagazine.ca/category/shakeout-podcast/)       | News  |   ✅    |   317   |  weekly   | 2017-08 |  291  |  9.3k  |
 |                              [Coffe Club](https://cpp.chat/)                              |  Pro  |   ✅    |   72    |  weekly   | 2021-09 |  56   |  3.2k  |
 | [The Price of a Mile](http://citiusmag.com/podcast/price-mile-podcast-andrew-bumbalough/) |  Pro  |   ⛔    |   11    |     -     | 2017-03 |  38   |  192   |
