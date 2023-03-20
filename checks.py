@@ -60,7 +60,7 @@ dates.sort()
 for a, b in zip(dates[:-1], dates[1:]):
     if (b - a).days != 14:
         problem = True
-print (("❌" if problem else "✅") + " - Dates Differ by 7 Days")
+print (("❌" if problem else "✅") + " - Dates Differ by 14 Days")
 
 # Episodes
 print("EPISODES CHECKS")
