@@ -9,6 +9,7 @@ List of all episodes.
 
 |   #   |                                                      Title                                                       | Release Date |
 | :---: | :--------------------------------------------------------------------------------------------------------------: | :----------: |
+|   6   |      [Boston, Van Sun Run Recap & Bum Run Preview!](https://runforthefunofit.com/2023/05/01/Episode-6.html)      |  2023-05-01  |
 |   5   |                [Special Guest Betty Yan!](https://runforthefunofit.com/2023/04/17/Episode-5.html)                |  2023-04-17  |
 |   4   | [Achilles 5k Recap, Vancouver Sun Run 10k & 5k History!](https://runforthefunofit.com/2023/04/03/Episode-4.html) |  2023-04-03  |
 |   3   |            [Meet Alison & Chilly Half Recap!](https://runforthefunofit.com/2023/03/20/Episode-3.html)            |  2023-03-20  |
