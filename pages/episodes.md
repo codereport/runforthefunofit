@@ -9,6 +9,7 @@ List of all episodes.
 
 |   #   |                                                        Title                                                        | Release Date |
 | :---: | :-----------------------------------------------------------------------------------------------------------------: | :----------: |
+|   8   | [Toronto Marathon Post-Race Post-Beer Interviews! (Part 2)](https://runforthefunofit.com/2023/05/15/Episode-8.html) |  2023-05-15  |
 |   7   | [Toronto Marathon Post-Race Post-Beer Interviews! (Part 1)](https://runforthefunofit.com/2023/05/08/Episode-7.html) |  2023-05-08  |
 |   6   |       [Boston, Van Sun Run Recap & Bum Run Preview!](https://runforthefunofit.com/2023/05/01/Episode-6.html)        |  2023-05-01  |
 |   5   |                 [Special Guest Betty Yan!](https://runforthefunofit.com/2023/04/17/Episode-5.html)                  |  2023-04-17  |
