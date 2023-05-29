@@ -9,6 +9,7 @@ List of all episodes.
 
 |   #   |                                                        Title                                                        | Release Date |
 | :---: | :-----------------------------------------------------------------------------------------------------------------: | :----------: |
+|   9   |           [Spring Triple Recap! + Emergency Pod](https://runforthefunofit.com/2023/05/29/Episode-9.html)            |  2023-05-29  |
 |   8   | [Toronto Marathon Post-Race Post-Beer Interviews! (Part 2)](https://runforthefunofit.com/2023/05/15/Episode-8.html) |  2023-05-15  |
 |   7   | [Toronto Marathon Post-Race Post-Beer Interviews! (Part 1)](https://runforthefunofit.com/2023/05/08/Episode-7.html) |  2023-05-08  |
 |   6   |       [Boston, Van Sun Run Recap & Bum Run Preview!](https://runforthefunofit.com/2023/05/01/Episode-6.html)        |  2023-05-01  |
