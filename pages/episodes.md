@@ -9,6 +9,7 @@ List of all episodes.
 
 |   #   |                                                        Title                                                        | Release Date |
 | :---: | :-----------------------------------------------------------------------------------------------------------------: | :----------: |
+|  12   |    [10KTO Recap, Twilight 5k Preview & Mental Health!](https://runforthefunofit.com/2023/08/02/Episode-12.html)     |  2023-08-02  |
 |  11   |      [Meaford 5k 🥇, USATF Championships and Snacks!](https://runforthefunofit.com/2023/07/12/Episode-11.html)       |  2023-07-12  |
 |  10   |              [Roaming Rome & CityStrides.com](https://runforthefunofit.com/2023/06/12/Episode-10.html)              |  2023-06-12  |
 |   9   |           [Spring Triple Recap! + Emergency Pod](https://runforthefunofit.com/2023/05/29/Episode-9.html)            |  2023-05-29  |
