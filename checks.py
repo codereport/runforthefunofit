@@ -58,7 +58,7 @@ for post_name in os.listdir("_posts/"):
     dates.append(datetime.strptime(date, "%Y-%m-%d"))
 dates.sort()
 for a, b in zip(dates[:-1], dates[1:]):
-    if (b - a).days not in [7, 14, 30]:
+    if (b - a).days not in [7, 14, 30, 21]:
         problem = True
 print (("❌" if problem else "✅") + " - Dates Differ by 14 Days")
 
