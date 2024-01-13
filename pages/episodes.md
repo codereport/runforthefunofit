@@ -9,6 +9,7 @@ List of all episodes.
 
 |   #   |                                                        Title                                                        | Release Date |
 | :---: | :-----------------------------------------------------------------------------------------------------------------: | :----------: |
+|  14   |  [YüBaí Joins BlackToe 🥳, 5k & Half PBs 🔥 & 2024 Goals 🎯](https://runforthefunofit.com/2024/01/12/Episode-14.html)  |  2024-01-12  |
 |  13   | [2023 World Champs, Diamond League Final, 2x 5k and More!](https://runforthefunofit.com/2023/09/22/Episode-13.html) |  2023-09-22  |
 |  12   |    [10KTO Recap, Twilight 5k Preview & Mental Health!](https://runforthefunofit.com/2023/08/02/Episode-12.html)     |  2023-08-02  |
 |  11   |      [Meaford 5k 🥇, USATF Championships and Snacks!](https://runforthefunofit.com/2023/07/12/Episode-11.html)       |  2023-07-12  |
