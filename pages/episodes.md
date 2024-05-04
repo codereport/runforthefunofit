@@ -9,6 +9,7 @@ List of all episodes.
 
 |   #   |                                                           Title                                                            | Release Date |
 | :---: | :------------------------------------------------------------------------------------------------------------------------: | :----------: |
+|  17   |     [Boston 🦄, YüBaí's 1:27 Half 🥳, Caitlin Clark 🏀 & More!](https://runforthefunofit.com/2024/05/04/Episode-17.html)      |  2024-05-04  |
 |  16   |                 [Special Guest Romain Carette! 🥳](https://runforthefunofit.com/2024/03/22/Episode-16.html)                 |  2024-03-22  |
 |  15   | [Olympic Marathon Trials 🏆, Vegas 🎰, Costa Rica 🌴 & the 3M Half!](https://runforthefunofit.com/2024/02/14/Episode-15.html) |  2024-02-14  |
 |  14   |     [YüBaí Joins BlackToe 🥳, 5k & Half PBs 🔥 & 2024 Goals 🎯](https://runforthefunofit.com/2024/01/12/Episode-14.html)      |  2024-01-12  |
