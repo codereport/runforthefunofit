@@ -49,4 +49,5 @@ List of all episodes.
 | 2024-05-05 |       Toronto Half        |   Half   | 1:15:13 |   4   | 7927  |   ⛔   |       | [Results](https://sportstats.one/results/130410?focus=7997&type=pid)                                                                                                                                     |
 | 2024-05-12 |     Sporting Life 10k     |   10k    |
 | 2024-07-14 |           10KTO           |   10K    |
+| 2024-10-20 |    TCS Waterfront Half    |   Half   |
 | 2024-12-14 |      San Diego Half       |   Half   |
