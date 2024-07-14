@@ -48,7 +48,7 @@ List of all episodes.
 | 2024-04-28 |      Toronto Bum Run      |    5k    |  16:44  |   9   |  654  |   ✅   |       | [Results](https://results.raceroster.com/v2/en-CA/results/7q25eetdd7vh23ya/results?_gl=1*1uhucuu*_ga*MjgyNjA2MDY5LjE2MjM3Nzk5MTk.*_ga_1WPZ1G08ZN*MTcxNDE2OTgyNC40My4xLjE3MTQxNzAwMjIuMy4wLjA.)           |
 | 2024-05-05 |       Toronto Half        |   Half   | 1:15:13 |   4   | 7927  |   ⛔   |       | [Results](https://sportstats.one/results/130410?focus=7997&type=pid)                                                                                                                                     |
 | 2024-05-12 |     Sporting Life 10k     |   10k    |  33:57  |  37   | 16587 |   ⛔   |       | [Results](https://sportstats.one/results/140346)                                                                                                                                                         |
-| 2024-07-14 |           10KTO           |   10K    |  35:12  |  14   | 1146  |   ⛔   |       | [Results](https://sportstats.one/results/141479)                                                                                                                                                         |
+| 2024-07-14 |           10KTO           |   10K    |  35:09  |  14   | 1146  |   ⛔   |       | [Results](https://sportstats.one/results/141479)                                                                                                                                                         |
 | 2024-08-08 |  BlackToe Night of PB's   |  1 Mile  |
 | 2024-10-20 |    TCS Waterfront Half    |   Half   |
 | 2024-12-14 |      San Diego Half       |   Half   |
