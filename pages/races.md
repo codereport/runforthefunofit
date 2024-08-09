@@ -52,6 +52,5 @@ List of all episodes.
 | 2024-08-08 |  BlackToe Night of PB's   |  1 Mile  | 4:48.10 |   6   |  75   |   ✅   |   ✅   | [Results](https://www.windsortiming.com/LiveResults/2024/NightofthePBs/index.php?Day=Results/240808F001.htm)                                                                                             |
 | 2024-08-08 |  BlackToe Night of PB's   |  4x400   | 3:53.29 |   🥇   |  14   |   ✅   |   ✅   | [Results](https://www.windsortiming.com/LiveResults/2024/NightofthePBs/index.php?Day=Results/240808F005.htm)                                                                                             |
 | 2024-10-20 |    TCS Waterfront Half    |   Half   |
-| 2024-11-26 |    Holly Jolly Fun Run    |    5k    |
 | 2024-12-14 |      San Diego Half       |   Half   |
 | 2025-02-08 |       Mesa Marathon       | Marathon |
