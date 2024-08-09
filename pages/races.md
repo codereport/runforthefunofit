@@ -50,5 +50,8 @@ List of all episodes.
 | 2024-05-12 |     Sporting Life 10k     |   10k    |  33:57  |  37   | 16587 |   ⛔   |       | [Results](https://sportstats.one/results/140346)                                                                                                                                                         |
 | 2024-07-14 |           10KTO           |   10K    |  35:09  |  14   | 1146  |   ⛔   |       | [Results](https://sportstats.one/results/141479)                                                                                                                                                         |
 | 2024-08-08 |  BlackToe Night of PB's   |  1 Mile  | 4:48.10 |   6   |  75   |   ✅   |   ✅   | [Results](https://www.windsortiming.com/LiveResults/2024/NightofthePBs/index.php?Day=Results/240808F001.htm)                                                                                             |
+| 2024-08-08 |  BlackToe Night of PB's   |  4x400   | 3:53.29 |   🥇   |  14   |   ✅   |   ✅   | [Results](https://www.windsortiming.com/LiveResults/2024/NightofthePBs/index.php?Day=Results/240808F005.htm)                                                                                             |
 | 2024-10-20 |    TCS Waterfront Half    |   Half   |
+| 2024-11-26 |    Holly Jolly Fun Run    |    5k    |
 | 2024-12-14 |      San Diego Half       |   Half   |
+| 2025-02-08 |       Mesa Marathon       | Marathon |
