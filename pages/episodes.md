@@ -9,7 +9,7 @@ List of all episodes.
 
 |   #   |                                                               Title                                                               | Release Date |
 | :---: | :-------------------------------------------------------------------------------------------------------------------------------: | :----------: |
-|  21   |            [2024 Olympics 🏟️ & BlackToe Night of PBs 🥳 Recap!](https://runforthefunofit.com/2024/11/09/Episode-21.html)            |  2024-11-09  |
+|  21   |         [2024 Paris Olympics 🏟️ & BlackToe Night of PBs 🥳 Recap!](https://runforthefunofit.com/2024/11/09/Episode-21.html)         |  2024-11-09  |
 |  20   | [ENGAGED 💍 + Marathon Announcement 🍻, US Trials 🏁 & Grand Slam Track 🏆!](https://runforthefunofit.com/2024/09/18/Episode-20.html) |  2024-09-18  |
 |  19   |           [Prefontaine Classic 🏃, Sporting Life 10K ⛰️ & More!](https://runforthefunofit.com/2024/06/09/Episode-19.html)           |  2024-06-09  |
 |  18   |          [Toronto Half 😡, Bum Run 🍑, Rain 🌧️ and Solo Racing 🏃‍♀️](https://runforthefunofit.com/2024/05/24/Episode-18.html)           |  2024-05-24  |
