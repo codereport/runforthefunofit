@@ -54,7 +54,7 @@ List of all episodes.
 | 2024-10-20 |    TCS Waterfront Half    |   Half   | 1:16:11 |  60   | 11691 |   ⛔   |       | [Results](https://sportstats.one/results/142386)                                                                                                                                                         |
 | 2024-11-03 |  Road2Hope Hamilton Half  |   Half   | 1:15:29 |   6   | 1377  |   ✅   |       | [Results](https://results.raceroster.com/v2/en-CA/results/ze7e2rzd2dbnrmcn/detail/utuhmtnfk6b3953x)                                                                                                      |
 | 2024-11-24 |    Holly Jolly Fun Run    |    5k    |  16:18  |  17   | 1758  |   ⛔   |       | [Results](https://results.raceroster.com/v2/en-CA/results/phfbgmkqxhdj9xn3/results)                                                                                                                      |
-| 2024-12-08 |   BlackToe Holiday 10k    |   10k    |
+| 2024-12-08 |   BlackToe Holiday 10k    |   10k    |  34:30  |  28   | 1679  |   ⛔   |       | [Results](https://results.raceroster.com/v2/en-CA/results/3p23fyvd7yqz5eas/results?subEvent=219977&page=1)                                                                                               |
 | 2024-12-14 |      San Diego Half       |   Half   |
 | ---------- |      **-- 2025 --**       |    -     |
 | 2025-02-08 |       Mesa Marathon       | Marathon |
