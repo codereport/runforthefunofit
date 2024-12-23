@@ -5,7 +5,7 @@ permalink: /about/
 feature-img: "assets/img/pexels/funrun_header.png"
 ---
 
-**RUN FOR THE FUN OF IT!** is an inclusive running podcast geared towards runners and non-runners of all levels. Both of your cohosts live in Toronto, Canada and have been recreational/serious runners for over a decade.
+**The R4 Running Podcast** is an inclusive running podcast geared towards runners and non-runners of all levels. Both of your cohosts live in Toronto, Canada and have been recreational/serious runners for over a decade.
 
 Your two co-hosts are:
 
