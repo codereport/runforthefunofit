@@ -9,6 +9,7 @@ List of all episodes.
 
 |   #   |                                                               Title                                                               | Release Date |
 | :---: | :-------------------------------------------------------------------------------------------------------------------------------: | :----------: |
+|  24   |            [Holiday Racing 🎄 BlackToe 10k & San Diego Half!](https://runforthefunofit.com/2024/12/23/Episode-24.html)             |  2024-12-23  |
 |  23   |    [Dermot Kenny, TCS Waterfront 5k Winner + Holly Jolly Fun Run! 🎅](https://runforthefunofit.com/2024/12/02/Episode-23.html)     |  2024-12-02  |
 |  22   |           [Toronto, Hamilton, Major Marathons + Sauna Talk! 🧖‍♂️](https://runforthefunofit.com/2024/11/17/Episode-22.html)           |  2024-11-17  |
 |  21   |         [2024 Paris Olympics 🏟️ & BlackToe Night of PBs 🥳 Recap!](https://runforthefunofit.com/2024/11/09/Episode-21.html)         |  2024-11-09  |
