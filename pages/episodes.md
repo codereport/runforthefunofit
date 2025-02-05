@@ -9,6 +9,7 @@ List of all episodes.
 
 |   #   |                                                           Title                                                            | Release Date |
 | :---: | :------------------------------------------------------------------------------------------------------------------------: | :----------: |
+|  26   |           [Mesa Marathon Preview, 🤕 Injuries & 🏀 Luka Dončić!](https://r4podcast.com/2025/02/05/Episode-26.html)           |  2025-02-05  |
 |  25   |            [🎊 R4 🎊, ❤️ Love Island 🏝️, 2025 Goals 🎯 and More!"](https://r4podcast.com/2025/01/17/Episode-25.html)            |  2025-01-17  |
 |  24   |            [Holiday Racing 🎄 BlackToe 10k & San Diego Half!](https://r4podcast.com/2024/12/23/Episode-24.html)             |  2024-12-23  |
 |  23   |    [Dermot Kenny, TCS Waterfront 5k Winner + Holly Jolly Fun Run! 🎅](https://r4podcast.com/2024/12/02/Episode-23.html)     |  2024-12-02  |
