@@ -57,5 +57,6 @@ List of all races.
 | 2024-12-08 |   BlackToe Holiday 10k    |   10k    |  34:30  |  28   | 1679  |   ⛔   |       | [Results](https://results.raceroster.com/v2/en-CA/results/3p23fyvd7yqz5eas/results?subEvent=219977&page=1)                                                                                               |
 | 2024-12-14 |      San Diego Half       |   Half   | 1:15:45 |  23   | 2354  |   ⛔   |       | [Results](https://www.athlinks.com/event/383495/results/Event/1068751/Course/2426541/Results)                                                                                                            |
 | ---------- |      **-- 2025 --**       |    -     |
-| 2025-02-08 |       Mesa Marathon       | Marathon |
+| 2025-02-08 |       Mesa Marathon       | Marathon | 2:57:29 |  157  | 3624  |   ✅   |   ✅   | [Results](https://mesamarathon.com/results?pk=7822661)                                                                                                                                                   |
 | 2025-03-02 |        Chilly Half        |   Half   |
+| 2025-05-11 |     Sporting Life 10k     |   10k    |
