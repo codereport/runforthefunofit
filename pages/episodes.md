@@ -9,6 +9,7 @@ List of all episodes.
 
 |   #   |                                                           Title                                                            | Release Date |
 | :---: | :------------------------------------------------------------------------------------------------------------------------: | :----------: |
+|  28   |           [Chilly Half 🥶, Tokyo Marathon 🇯🇵 & Upcoming Races!](https://r4podcast.com/2025/04/04/Episode-28.html)            |  2025-04-04  |
 |  27   |                 [🥳 2025 Mesa Marathon Bachelor Party! 🥳](https://r4podcast.com/2025/02/15/Episode-27.html)                 |  2025-02-15  |
 |  26   |           [Mesa Marathon Preview, 🤕 Injuries & 🏀 Luka Dončić!](https://r4podcast.com/2025/02/05/Episode-26.html)           |  2025-02-05  |
 |  25   |            [🎊 R4 🎊, ❤️ Love Island 🏝️, 2025 Goals 🎯 and More!](https://r4podcast.com/2025/01/17/Episode-25.html)             |  2025-01-17  |
