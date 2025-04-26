@@ -7,6 +7,7 @@ feature-img: "assets/img/pexels/funrun_header.png"
 
 <div>
   <select id="raceFilter">
+    <option value="AllRaces">All Races</option>
     <option value="5k">All 5ks</option>
     <option value="10k">All 10ks</option>
     <option value="Half" selected>All Half Marathons</option>
@@ -106,6 +107,7 @@ List of all races.
 | 2026-03-xx |        Chilly Half         |           Half            |
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // Extract race data from the table
@@ -119,6 +121,17 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Define minimum date cutoff - May 1, 2014
   const minDate = new Date('2014-05-01');
+  
+  // Define race distances in kilometers for pace calculations
+  const distanceValues = {
+    '5k': 5,
+    '10k': 10,
+    'Half': 21.0975,
+    'Marathon': 42.195,
+    '8k': 8,
+    '6k': 6,
+    '1 Mile': 1.60934
+  };
   
   const races = [];
   rows.forEach(row => {
@@ -151,12 +164,17 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       
       if (seconds > 0) {
+        // Calculate pace (seconds per km)
+        const distanceKm = distanceValues[distance] || 0;
+        const pace = distanceKm > 0 ? seconds / distanceKm : 0;
+        
         races.push({
           date: raceDate,
           name: raceName,
           distance: distance,
           timeSeconds: seconds,
-          timeFormatted: timeStr
+          timeFormatted: timeStr,
+          pace: pace
         });
       }
     }
@@ -183,11 +201,44 @@ document.addEventListener('DOMContentLoaded', function() {
   const ctx = document.getElementById('raceChart').getContext('2d');
   let chart = null;
   
+  // Format pace (MM:SS per km)
+  const formatPace = (paceSeconds) => {
+    const m = Math.floor(paceSeconds / 60);
+    const s = Math.floor(paceSeconds % 60);
+    return `${m}:${s.toString().padStart(2, '0')}/km`;
+  };
+  
+  // Format y-axis time labels (MM:SS or HH:MM:SS)
+  const formatTime = (seconds) => {
+    if (seconds >= 3600) {
+      const h = Math.floor(seconds / 3600);
+      const m = Math.floor((seconds % 3600) / 60);
+      const s = Math.floor(seconds % 60);
+      return `${h}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+    } else {
+      const m = Math.floor(seconds / 60);
+      const s = Math.floor(seconds % 60);
+      return `${m}:${s.toString().padStart(2, '0')}`;
+    }
+  };
+  
   function updateChart(filterValue) {
     let filteredRaces = races;
     let title = '';
+    let showMultipleDistances = false;
+    let usePace = false;
     
-    if (filterValue === '5k') {
+    if (filterValue === 'AllRaces') {
+      // Only include major race types for the combined view
+      filteredRaces = races.filter(race => 
+        race.distance === '5k' || 
+        race.distance === '10k' || 
+        race.distance === 'Half'
+      );
+      title = 'All Races (Pace)';
+      showMultipleDistances = true;
+      usePace = true;
+    } else if (filterValue === '5k') {
       filteredRaces = races.filter(race => race.distance === '5k');
       title = 'All 5k Races';
     } else if (filterValue === '10k') {
@@ -205,69 +256,139 @@ document.addEventListener('DOMContentLoaded', function() {
       title = raceName;
     }
     
-    // Sort by date
-    filteredRaces.sort((a, b) => a.date - b.date);
-    
-    // Create chart data
-    const labels = filteredRaces.map(race => race.date.toISOString().split('T')[0]);
-    const data = filteredRaces.map(race => race.timeSeconds);
-    
-    // Format y-axis time labels (MM:SS or HH:MM:SS)
-    const formatTime = (seconds) => {
-      if (seconds >= 3600) {
-        const h = Math.floor(seconds / 3600);
-        const m = Math.floor((seconds % 3600) / 60);
-        const s = Math.floor(seconds % 60);
-        return `${h}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
-      } else {
-        const m = Math.floor(seconds / 60);
-        const s = Math.floor(seconds % 60);
-        return `${m}:${s.toString().padStart(2, '0')}`;
-      }
-    };
-    
     // Destroy existing chart if it exists
     if (chart) {
       chart.destroy();
     }
     
-    // Create new chart
-    chart = new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels: labels,
-        datasets: [{
-          label: title,
-          data: data,
-          borderColor: 'rgb(0, 128, 0)', // Green line
-          backgroundColor: 'rgb(0, 128, 0)',
-          tension: 0.1,
-          fill: false,
-          pointRadius: 6 // Larger data points
-        }]
-      },
-      options: {
-        scales: {
-          y: {
-            // Y-axis not reversed - higher times will be higher on chart
-            ticks: {
-              callback: formatTime
-            }
-          }
+    if (showMultipleDistances) {
+      // Group races by distance
+      const raceTypes = ['5k', '10k', 'Half'];
+      const datasets = [];
+      const colors = {
+        '5k': 'rgb(0, 128, 255)', // Blue
+        '10k': 'rgb(255, 0, 0)',  // Red
+        'Half': 'rgb(0, 128, 0)'   // Green
+      };
+      
+      // Create datasets for each distance type
+      raceTypes.forEach(distanceType => {
+        const distanceRaces = filteredRaces
+          .filter(race => race.distance === distanceType)
+          .sort((a, b) => a.date - b.date);
+          
+        if (distanceRaces.length > 0) {
+          datasets.push({
+            label: distanceType,
+            data: distanceRaces.map(race => {
+              return {
+                x: race.date,
+                y: race.pace,
+                race: race
+              };
+            }),
+            borderColor: colors[distanceType],
+            backgroundColor: colors[distanceType],
+            tension: 0.1,
+            fill: false,
+            pointRadius: 6
+          });
+        }
+      });
+      
+      // Create chart with multiple datasets
+      chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          datasets: datasets
         },
-        plugins: {
-          tooltip: {
-            callbacks: {
-              label: (context) => {
-                const index = context.dataIndex;
-                const race = filteredRaces[index];
-                return `${race.name} - ${race.timeFormatted}`;
+        options: {
+          scales: {
+            x: {
+              type: 'time',
+              time: {
+                unit: 'month'
+              },
+              title: {
+                display: true,
+                text: 'Date'
+              }
+            },
+            y: {
+              // Not reversed - higher pace will be higher on chart
+              reverse: false,
+              ticks: {
+                callback: formatPace
+              },
+              title: {
+                display: true,
+                text: 'Pace (min/km)'
+              }
+            }
+          },
+          plugins: {
+            tooltip: {
+              callbacks: {
+                title: (tooltipItems) => {
+                  const race = tooltipItems[0].raw.race;
+                  return `${race.name} (${race.date.toISOString().split('T')[0]})`;
+                },
+                label: (context) => {
+                  const race = context.raw.race;
+                  return `${race.distance}: ${formatPace(race.pace)} (${race.timeFormatted})`;
+                }
               }
             }
           }
         }
-      }
-    });
+      });
+    } else {
+      // Sort by date for single-distance charts
+      filteredRaces.sort((a, b) => a.date - b.date);
+      
+      // Create chart data
+      const labels = filteredRaces.map(race => race.date.toISOString().split('T')[0]);
+      const data = filteredRaces.map(race => usePace ? race.pace : race.timeSeconds);
+      
+      // Create new chart
+      chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: title,
+            data: data,
+            borderColor: 'rgb(0, 128, 0)', // Green line
+            backgroundColor: 'rgb(0, 128, 0)',
+            tension: 0.1,
+            fill: false,
+            pointRadius: 6 // Larger data points
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              // For pace, lower is better so reverse the axis
+              reverse: usePace,
+              ticks: {
+                callback: usePace ? formatPace : formatTime
+              }
+            }
+          },
+          plugins: {
+            tooltip: {
+              callbacks: {
+                label: (context) => {
+                  const index = context.dataIndex;
+                  const race = filteredRaces[index];
+                  return `${race.name} - ${race.timeFormatted}`;
+                }
+              }
+            }
+          }
+        }
+      });
+    }
   }
   
   // Initial chart - default to Half Marathons
