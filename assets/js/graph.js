@@ -288,7 +288,7 @@ document.addEventListener('DOMContentLoaded', function() {
           },
           elements: {
             point: {
-              radius: 8,
+              radius: 7,
               hoverRadius: 16,
               z: 10
             }
@@ -315,12 +315,19 @@ document.addEventListener('DOMContentLoaded', function() {
             backgroundColor: 'rgb(0, 128, 0)',
             tension: 0.1,
             fill: false,
-            pointRadius: 6 // Larger data points
+            pointRadius: 7 // Match with scatter chart
           }]
         },
         options: {
           font: {
             family: "'JetBrains Mono', monospace"
+          },
+          elements: {
+            point: {
+              radius: 7,
+              hoverRadius: 16,
+              z: 10
+            }
           },
           scales: {
             y: {
@@ -350,7 +357,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 size: 18,
                 family: "'JetBrains Mono', monospace"
               },
-              padding: 10,
+              padding: 15,
               callbacks: {
                 label: (context) => {
                   const index = context.dataIndex;
