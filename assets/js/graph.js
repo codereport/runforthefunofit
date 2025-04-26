@@ -267,6 +267,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 family: "'JetBrains Mono', monospace"
               },
               padding: 15,
+              position: 'nearest',
+              caretPadding: 20,
+              yAlign: 'bottom',
               callbacks: {
                 title: (tooltipItems) => {
                   const race = tooltipItems[0].raw.race;
@@ -358,6 +361,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 family: "'JetBrains Mono', monospace"
               },
               padding: 15,
+              position: 'nearest',
+              caretPadding: 20,
+              yAlign: 'bottom',
               callbacks: {
                 label: (context) => {
                   const index = context.dataIndex;
