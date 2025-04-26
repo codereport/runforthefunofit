@@ -5,62 +5,277 @@ permalink: /races/
 feature-img: "assets/img/pexels/funrun_header.png"
 ---
 
+<div>
+  <select id="raceFilter">
+    <option value="5k">All 5ks</option>
+    <option value="10k">All 10ks</option>
+    <option value="Half" selected>All Half Marathons</option>
+    <option value="Marathon">All Marathons</option>
+    <!-- Dynamic options for races run 3+ times will be added here -->
+  </select>
+  <canvas id="raceChart"></canvas>
+</div>
+
+<br>
 List of all races.
 
-|    Date    |           Race            | Distance |  Time   | Place | Total |  CPB  |  PB   | Link                                                                                                                                                                                                     |
-| :--------: | :-----------------------: | :------: | :-----: | :---: | :---: | :---: | :---: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|     -      | **-- GLOBAL PANDEMIC --** |    -     |
-|     -      |      **-- 2021 --**       |    -     |
-| 2021-10-17 |      Scotiabank 10k       |   10k    |  36:26  |  57   | 3950  |   ✅   |       | [Results](https://sportstats.one/results/113579?focus=2265&type=pid)                                                                                                                                     |
-| 2021-10-23 |       SuperPower 5k       |    5k    |  17:57  |   🥉   |  369  |   ✅   |   ✅   | [Results](https://sportstats.one/results/113386?focus=82&type=pid)                                                                                                                                       |
-| 2021-11-28 |  Vancouver Historic 10k   |   10k    |  35:29  |   🥉   |  178  |   ✅   |   ✅   | [Results](https://static1.squarespace.com/static/60d3e9cf7486d231c71a9c58/t/6212e8008c750a3ce048ac82/1645406208197/2021_VanHistoric_Results%281%29.pdf)                                                  |
-|     -      |      **-- 2022 --**       |    -     |
-| 2022-03-05 |         BT  Half          |   Half   | 1:21:53 |   -   |   -   |  ✅*   |  ✅*   | -                                                                                                                                                                                                        |
-| 2022-04-09 |      Spring Run Off       |    5k    |  18:07  |   6   | 1195  |   ✅   |       | [Results](https://sportstats.one/results/114365?focus=2260&type=pid)                                                                                                                                     |
-| 2022-04-24 |      Toronto Bum Run      |    5k    |  17:32  |   8   |  501  |   ✅   |   ✅   | [Results](https://results.raceroster.com/v2/en-CA/results/m7xfvwstqn94snf3/results)                                                                                                                      |
-| 2022-05-01 |       Toronto Half        |   Half   | 1:18:25 |  12   | 4085  |   ✅   |   ✅   | [Results](https://sportstats.one/results/114800?focus=6062&type=pid)                                                                                                                                     |
-| 2022-05-08 |     Sporting Life 10k     |   10k    |  34:31  |  27   | 10407 |   ✅   |   ✅   | [Results](https://sportstats.one/results/114390?focus=4550&type=pid)                                                                                                                                     |
-| 2022-06-25 |         Pride 5k          |    5k    |  16:54  |   9   | 1456  |   ✅   |   ✅   | [Results](https://results.raceroster.com/v2/en-CA/results/wxqpcwthd3j6mf2x/results?subEvent=&_gl=1*1nlc9ec*_ga*MTI1MjI4MDE2Ny4xNzE1MTEwNjQz*_ga_00MLJDHYVT*MTcxNTExMDY0My4xLjAuMTcxNTExMDY0My4wLjAuMA..) |
-| 2022-07-24 |           10KTO           |   10k    |  35:12  |   6   |  149  |   ✅   |       | [Results](https://sportstats.one/results/116710?focus=1282&type=pid)                                                                                                                                     |
-| 2022-08-11 |  LongBoat Sunset Shuffle  |    6k    |  20:44  |  10   |  252  |   ✅   |   ✅   | [Results](https://results.raceroster.com/v2/en-CA/results/u6r3ndu55jh7un45/results)                                                                                                                      |
-| 2022-08-28 |       SuperPower 5k       |    5k    |  17:26  |   🥈   |  387  |   ✅   |   ✅   | [Results](https://sportstats.one/results/116766?focus=189&type=pid)                                                                                                                                      |
-| 2022-10-16 |    TCS Waterfront Half    |   Half   | 1:17:23 |  73   | 8660  |   ✅   |   ✅   | [Results](https://sportstats.one/results/114381?focus=14312&type=pid)                                                                                                                                    |
-| ---------- |      **-- 2023 --**       |    -     |
-| 2023-01-22 |      Austin 3M Half       |   Half   | 1:14:42 |  29   | 4522  |   ✅   |   ✅   | [Results](https://www.mychiptime.com/searchevent.php?id=14850)                                                                                                                                           |
-| 2023-03-05 |        Chilly Half        |   Half   | 1:14:54 |  22   | 2561  |   ✅   |       | [Results](https://results.raceroster.com/v2/en-US/results/t6eecgh7bs7ayp3y/results?subEvent=159834)                                                                                                      |
-| 2023-03-12 | St. Patrick's Achilles 5k |    5k    |  16:32  |   🥉   |  636  |   ✅   |   ✅   | [Results](https://results.raceroster.com/v2/en-CA/results/69bpyerrt4d4xebz/results?subEvent=&page=1&sortCol=chipTime&sortDir=asc)                                                                        |
-| 2023-04-16 |     Vancouver Sun Run     |   10k    |  33:45  |  62   | 25320 |   ✅   |   ✅   | [Results](https://sportstats.one/results/118162?focus=25509&type=pid)                                                                                                                                    |
-| 2023-04-30 |      Toronto Bum Run      |    5k    |  16:52  |   5   |  527  |   ✅   |       | [Results](https://results.raceroster.com/v2/en-CA/results/ytm9d69p5j9msvcx/results)                                                                                                                      |
-| 2023-05-07 |       Toronto Half        |   Half   | 1:14:37 |   8   | 5578  |   ✅   |   ✅   | [Results](https://sportstats.one/results/128526?focus=35505&type=pid)                                                                                                                                    |
-| 2023-05-14 |     Sporting Life 10k     |   10k    |  33:00  |  20   | 13377 |   ✅   |   ✅   | [Results](https://sportstats.one/results/128532?focus=5578&type=pid)                                                                                                                                     |
-| 2023-07-08 |        Meaford 5k         |    5k    |  17:01  |   🥇   |  229  |   ✅   |       | [Results](https://results.raceroster.com/v2/en-CA/results/wmkh6whux2wvgpad/results?subEvent=)                                                                                                            |
-| 2023-07-23 |           10KTO           |   10k    |  34:56  |  12   |  439  |   ✅   |       | [Results](https://sportstats.one/results/118625?focus=4690&type=pid)                                                                                                                                     |
-| 2023-08-02 | Tracksmith Twilight 5000  |    5k    |  16:52  |  19   |  320  |   ✅   |       | [Results](https://results.raceroster.com/v2/en-US/results/qch3trzmetwkyeu7/results?page=1&sortCol=gunTime&sortDir=asc)                                                                                   |
-| 2023-08-27 |       SuperPower 5k       |    5k    |  16:15  |   🥈   |  430  |   ✅   |   ✅   | [Results](https://sportstats.one/results/129474?focus=1032&type=pid)                                                                                                                                     |
-| 2023-10-15 |    TCS Waterfront Half    |   Half   | 1:15:50 |  49   | 10759 |   ✅   |       | [Results](https://sportstats.one/results/129771?focus=104939&type=pid)                                                                                                                                   |
-| 2023-11-26 |    Holly Jolly Fun Run    |    5k    |  15:36  |   🥈   | 1241  |   ✅   |   ✅   | [Results](https://results.raceroster.com/v2/en-CA/results/qc2qr7ea2xn6wzff/results)                                                                                                                      |
-| 2023-12-03 |    BlackToe Holidy 10k    |   10k    |  33:21  |   9   | 1204  |   ✅   |       | [Results](https://results.raceroster.com/v2/en-CA/results/mvc52u2zrfc4gbf2/results?_gl=1*186g7s6*_ga*MjgyNjA2MDY5LjE2MjM3Nzk5MTk.*_ga_1WPZ1G08ZN*MTcwMTU1MzQzMS4xLjEuMTcwMTU1MzgzMS41OS4wLjA.)           |
-| 2023-12-16 |      San Diego Half       |   Half   | 1:11:16 |  24   | 2431  |   ✅   |   ✅   | [Results](https://www.athlinks.com/event/374702/results/Event/1067333/Course/2422243/Results)                                                                                                            |
-| ---------- |      **-- 2024 --**       |    -     |
-| 2024-01-21 |      Austin 3M Half       |   Half   | 1:13:03 |  16   | 4721  |   ✅   |       | [Results](https://mychiptime.com/searchevent.php?id=15389)                                                                                                                                               |
-| 2024-03-03 |        Chilly Half        |   Half   | 1:14:34 |  26   | 2786  |   ✅   |       | [Results](https://sportstats.one/results/130407)                                                                                                                                                         |
-| 2024-03-17 | St. Patrick's Achilles 5k |    5k    |  17:05  |   6   |  663  |   ✅   |       | [Results](https://results.raceroster.com/v2/en-CA/results/77r9ng33bzxwysem/results)                                                                                                                      |
-| 2024-04-28 |      Toronto Bum Run      |    5k    |  16:44  |   9   |  654  |   ✅   |       | [Results](https://results.raceroster.com/v2/en-CA/results/7q25eetdd7vh23ya/results?_gl=1*1uhucuu*_ga*MjgyNjA2MDY5LjE2MjM3Nzk5MTk.*_ga_1WPZ1G08ZN*MTcxNDE2OTgyNC40My4xLjE3MTQxNzAwMjIuMy4wLjA.)           |
-| 2024-05-05 |       Toronto Half        |   Half   | 1:15:13 |   4   | 7927  |   ⛔   |       | [Results](https://sportstats.one/results/130410?focus=7997&type=pid)                                                                                                                                     |
-| 2024-05-12 |     Sporting Life 10k     |   10k    |  33:57  |  37   | 16587 |   ⛔   |       | [Results](https://sportstats.one/results/140346)                                                                                                                                                         |
-| 2024-07-14 |           10KTO           |   10K    |  35:09  |  14   | 1146  |   ⛔   |       | [Results](https://sportstats.one/results/141479)                                                                                                                                                         |
-| 2024-08-08 |  BlackToe Night of PB's   |  1 Mile  | 4:48.10 |   6   |  75   |   ✅   |   ✅   | [Results](https://www.windsortiming.com/LiveResults/2024/NightofthePBs/index.php?Day=Results/240808F001.htm)                                                                                             |
-| 2024-08-08 |  BlackToe Night of PB's   |  4x400   | 3:53.29 |   🥇   |  14   |   ✅   |   ✅   | [Results](https://www.windsortiming.com/LiveResults/2024/NightofthePBs/index.php?Day=Results/240808F005.htm)                                                                                             |
-| 2024-10-20 |    TCS Waterfront Half    |   Half   | 1:16:11 |  60   | 11691 |   ⛔   |       | [Results](https://sportstats.one/results/142386)                                                                                                                                                         |
-| 2024-11-03 |  Road2Hope Hamilton Half  |   Half   | 1:15:29 |   6   | 1377  |   ✅   |       | [Results](https://results.raceroster.com/v2/en-CA/results/ze7e2rzd2dbnrmcn/detail/utuhmtnfk6b3953x)                                                                                                      |
-| 2024-11-24 |    Holly Jolly Fun Run    |    5k    |  16:18  |  17   | 1758  |   ⛔   |       | [Results](https://results.raceroster.com/v2/en-CA/results/phfbgmkqxhdj9xn3/results)                                                                                                                      |
-| 2024-12-08 |   BlackToe Holiday 10k    |   10k    |  34:30  |  28   | 1679  |   ⛔   |       | [Results](https://results.raceroster.com/v2/en-CA/results/3p23fyvd7yqz5eas/results?subEvent=219977&page=1)                                                                                               |
-| 2024-12-14 |      San Diego Half       |   Half   | 1:15:45 |  23   | 2354  |   ⛔   |       | [Results](https://www.athlinks.com/event/383495/results/Event/1068751/Course/2426541/Results)                                                                                                            |
-| ---------- |      **-- 2025 --**       |    -     |
-| 2025-02-08 |       Mesa Marathon       | Marathon | 2:57:29 |  157  | 3624  |   ✅   |   ✅   | [Results](https://mesamarathon.com/results?pk=7822661)                                                                                                                                                   |
-| 2025-04-27 |          Bum Run          |    5k    |
-| 2025-05-04 |       Toronto Half        |   Half   |
-| 2025-05-11 |     Sporting Life 10k     |   10k    |
-| 2025-05-25 |      Ottawa Marathon      | Marathon |
-| ---------- |      **-- 2026 --**       |    -     |
-| 2026-03-xx |        Chilly Half        |   Half   |
+|    Date    |            Race            |         Distance          |  Time   | Place | Total |  CPB  |  PB   | Link                                                                                                                                                                                                     |
+| :--------: | :------------------------: | :-----------------------: | :-----: | :---: | :---: | :---: | :---: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ---------- |       **-- 2013 --**       |             -             |
+| 2013-04-20 |   Vancouver Sun Run 10k    |            10k            |  52:07  | 5402  | 38887 |   ✅   |   ✅   | [Results](https://sportstats.one/results/3620?focus=23012&type=pid)                                                                                                                                      |
+| ---------- |       **-- 2014 --**       |             -             |
+| 2014-04-26 |   Vancouver Sun Run 10k    |            10k            |  50:47  | 3189  | 36028 |   ✅   |   ✅   | [Results](https://sportstats.one/results/3843?focus=8760&type=pid)                                                                                                                                       |
+| 2014-10-18 | Scotiabank Waterfront Half |           Half            | 1:32:37 |  405  | 10569 |   ✅   |   ✅   | [Results](https://sportstats.one/results/460?focus=4229&type=pid)                                                                                                                                        |
+| ---------- |       **-- 2015 --**       |             -             |
+| 2015-04-18 |  Toronto Yonge Street 10k  |            10k            |  39:54  |  243  | 5262  |   ✅   |   ✅   | [Results](https://sportstats.one/results/23729?focus=833&type=pid)                                                                                                                                       |
+| 2015-05-02 |        Toronto Half        |           Half            | 1:29:25 |  80   | 3360  |   ✅   |   ✅   | [Results](https://sportstats.one/results/114800?focus=6062&type=pid)                                                                                                                                     |
+| 2015-05-09 |     Sporting Life 10k      |            10k            |  39:14  |  129  | 21163 |   ✅   |   ✅   | [Results](https://sportstats.one/results/23684?focus=18242&type=pid)                                                                                                                                     |
+| 2015-09-11 |       Oasis Zoo Run        |            10k            |  40:46  |  40   | 2480  |   ✅   |       | [Results](https://sportstats.one/results/22799?focus=238&type=pid)                                                                                                                                       |
+| 2015-10-17 | Scotiabank Waterfront Half |           Half            | 1:33:34 |  433  | 10264 |   ⛔   |       | [Results](https://sportstats.one/results/28511?focus=3890&type=pid)                                                                                                                                      |
+| ---------- |       **-- 2016 --**       |             -             |
+| 2016-04-08 |     Spring Run Off 8k      |            8k             |  34:39  |  124  | 1649  |   ✅   |   ✅   | [Results](https://sportstats.one/results/29180?focus=1425&type=pid)                                                                                                                                      |
+| 2016-04-30 |        Toronto Half        |           Half            | 1:27:43 |  53   | 3281  |   ✅   |   ✅   | [Results](https://sportstats.one/results/29442?focus=3604&type=pid)                                                                                                                                      |
+| 2016-05-07 |     Sporting Life 10k      |            10k            |  37:24  |  95   | 18689 |   ✅   |   ✅   | [Results](https://sportstats.one/results/29488?focus=14853&type=pid)                                                                                                                                     |
+| 2016-06-24 |   Toronto Waterfront 10k   |            10k            |  39:56  |  126  | 4827  |   ✅   |       | [Results](https://sportstats.one/results/29488?focus=14853&type=pid)                                                                                                                                     |
+| 2016-09-23 |       Oasis Zoo Run        |            10k            |  40:37  |  41   | 1701  |   ✅   |       | [Results](https://sportstats.one/results/30765?focus=1578&type=pid)                                                                                                                                      |
+| ---------- |       **-- 2017 --**       |             -             |
+| 2017-04-07 |     Spring Run Off 8k      |            8k             |  34:08  |  115  | 1859  |   ✅   |   ✅   | [Results](https://sportstats.one/results/29180?focus=1425&type=pid)                                                                                                                                      |
+| 2017-05-06 |        Toronto Half        |           Half            | 1:30:29 |  86   | 2846  |   ⛔   |       | [Results](https://sportstats.one/results/114800?focus=6062&type=pid)                                                                                                                                     |
+| 2017-05-13 |     Sporting Life 10k      |            10k            |  39:04  |  159  | 18501 |   ⛔   |       | [Results](https://sportstats.one/results/43449?focus=15511&type=pid)                                                                                                                                     |
+| 2017-06-16 |   Toronto Waterfront 10k   |            10k            |  41:26  |  139  | 6078  |   ⛔   |       | [Results](https://sportstats.one/results/43491?focus=1539&type=pid)                                                                                                                                      |
+| 2017-09-22 |       Oasis Zoo Run        |            10k            |  39:58  |  32   | 2080  |   ✅   |       | [Results](https://sportstats.one/results/43496?focus=2068&type=pid)                                                                                                                                      |
+| 2017-10-21 | Scotiabank Waterfront Half |           Half            | 1:30:40 |  239  | 9806  |   ✅   |       | [Results](https://sportstats.one/results/43502?focus=13469&type=pid)                                                                                                                                     |
+| ---------- |       **-- 2018 --**       |             -             |
+| 2018-05-05 |        Toronto Half        |           Half            | 1:29:53 |  86   | 2958  |   ⛔   |       | [Results](https://sportstats.one/results/93236?focus=4014&type=pid)                                                                                                                                      |
+| 2018-05-12 |     Sporting Life 10k      |            10k            |  37:48  |  122  | 17814 |   ⛔   |       | [Results](https://sportstats.one/results/93283?focus=14103&type=pid)                                                                                                                                     |
+| ---------- |                            |   **-- Live in USA --**   |    -    |
+| ---------- |                            | **-- GLOBAL PANDEMIC --** |    -    |
+| ---------- |       **-- 2021 --**       |             -             |
+| 2021-10-17 |       Scotiabank 10k       |            10k            |  36:26  |  57   | 3950  |   ✅   |       | [Results](https://sportstats.one/results/113579?focus=2265&type=pid)                                                                                                                                     |
+| 2021-10-23 |       SuperPower 5k        |            5k             |  17:57  |   🥉   |  369  |   ✅   |   ✅   | [Results](https://sportstats.one/results/113386?focus=82&type=pid)                                                                                                                                       |
+| 2021-11-28 |   Vancouver Historic 10k   |            10k            |  35:29  |   🥉   |  178  |   ✅   |   ✅   | [Results](https://static1.squarespace.com/static/60d3e9cf7486d231c71a9c58/t/6212e8008c750a3ce048ac82/1645406208197/2021_VanHistoric_Results%281%29.pdf)                                                  |
+| ---------- |       **-- 2022 --**       |             -             |
+| 2022-03-05 |          BT  Half          |           Half            | 1:21:53 |   -   |   -   |  ✅*   |  ✅*   | -                                                                                                                                                                                                        |
+| 2022-04-09 |     Spring Run Off 5k      |            5k             |  18:07  |   6   | 1195  |   ✅   |       | [Results](https://sportstats.one/results/114365?focus=2260&type=pid)                                                                                                                                     |
+| 2022-04-24 |      Toronto Bum Run       |            5k             |  17:32  |   8   |  501  |   ✅   |   ✅   | [Results](https://results.raceroster.com/v2/en-CA/results/m7xfvwstqn94snf3/results)                                                                                                                      |
+| 2022-05-01 |        Toronto Half        |           Half            | 1:18:25 |  12   | 4085  |   ✅   |   ✅   | [Results](https://sportstats.one/results/114800?focus=6062&type=pid)                                                                                                                                     |
+| 2022-05-08 |     Sporting Life 10k      |            10k            |  34:31  |  27   | 10407 |   ✅   |   ✅   | [Results](https://sportstats.one/results/114390?focus=4550&type=pid)                                                                                                                                     |
+| 2022-06-25 |          Pride 5k          |            5k             |  16:54  |   9   | 1456  |   ✅   |   ✅   | [Results](https://results.raceroster.com/v2/en-CA/results/wxqpcwthd3j6mf2x/results?subEvent=&_gl=1*1nlc9ec*_ga*MTI1MjI4MDE2Ny4xNzE1MTEwNjQz*_ga_00MLJDHYVT*MTcxNTExMDY0My4xLjAuMTcxNTExMDY0My4wLjAuMA..) |
+| 2022-07-24 |           10KTO            |            10k            |  35:12  |   6   |  149  |   ✅   |       | [Results](https://sportstats.one/results/116710?focus=1282&type=pid)                                                                                                                                     |
+| 2022-08-11 |  LongBoat Sunset Shuffle   |            6k             |  20:44  |  10   |  252  |   ✅   |   ✅   | [Results](https://results.raceroster.com/v2/en-CA/results/u6r3ndu55jh7un45/results)                                                                                                                      |
+| 2022-08-28 |       SuperPower 5k        |            5k             |  17:26  |   🥈   |  387  |   ✅   |   ✅   | [Results](https://sportstats.one/results/116766?focus=189&type=pid)                                                                                                                                      |
+| 2022-10-16 |    TCS Waterfront Half     |           Half            | 1:17:23 |  73   | 8660  |   ✅   |   ✅   | [Results](https://sportstats.one/results/114381?focus=14312&type=pid)                                                                                                                                    |
+| ---------- |       **-- 2023 --**       |             -             |
+| 2023-01-22 |       Austin 3M Half       |           Half            | 1:14:42 |  29   | 4522  |   ✅   |   ✅   | [Results](https://www.mychiptime.com/searchevent.php?id=14850)                                                                                                                                           |
+| 2023-03-05 |        Chilly Half         |           Half            | 1:14:54 |  22   | 2561  |   ✅   |       | [Results](https://results.raceroster.com/v2/en-US/results/t6eecgh7bs7ayp3y/results?subEvent=159834)                                                                                                      |
+| 2023-03-12 | St. Patrick's Achilles 5k  |            5k             |  16:32  |   🥉   |  636  |   ✅   |   ✅   | [Results](https://results.raceroster.com/v2/en-CA/results/69bpyerrt4d4xebz/results?subEvent=&page=1&sortCol=chipTime&sortDir=asc)                                                                        |
+| 2023-04-16 |     Vancouver Sun Run      |            10k            |  33:45  |  62   | 25320 |   ✅   |   ✅   | [Results](https://sportstats.one/results/118162?focus=25509&type=pid)                                                                                                                                    |
+| 2023-04-30 |      Toronto Bum Run       |            5k             |  16:52  |   5   |  527  |   ✅   |       | [Results](https://results.raceroster.com/v2/en-CA/results/ytm9d69p5j9msvcx/results)                                                                                                                      |
+| 2023-05-07 |        Toronto Half        |           Half            | 1:14:37 |   8   | 5578  |   ✅   |   ✅   | [Results](https://sportstats.one/results/128526?focus=35505&type=pid)                                                                                                                                    |
+| 2023-05-14 |     Sporting Life 10k      |            10k            |  33:00  |  20   | 13377 |   ✅   |   ✅   | [Results](https://sportstats.one/results/128532?focus=5578&type=pid)                                                                                                                                     |
+| 2023-07-08 |         Meaford 5k         |            5k             |  17:01  |   🥇   |  229  |   ✅   |       | [Results](https://results.raceroster.com/v2/en-CA/results/wmkh6whux2wvgpad/results?subEvent=)                                                                                                            |
+| 2023-07-23 |           10KTO            |            10k            |  34:56  |  12   |  439  |   ✅   |       | [Results](https://sportstats.one/results/118625?focus=4690&type=pid)                                                                                                                                     |
+| 2023-08-02 |  Tracksmith Twilight 5000  |            5k             |  16:52  |  19   |  320  |   ✅   |       | [Results](https://results.raceroster.com/v2/en-US/results/qch3trzmetwkyeu7/results?page=1&sortCol=gunTime&sortDir=asc)                                                                                   |
+| 2023-08-27 |       SuperPower 5k        |            5k             |  16:15  |   🥈   |  430  |   ✅   |   ✅   | [Results](https://sportstats.one/results/129474?focus=1032&type=pid)                                                                                                                                     |
+| 2023-10-15 |    TCS Waterfront Half     |           Half            | 1:15:50 |  49   | 10759 |   ✅   |       | [Results](https://sportstats.one/results/129771?focus=104939&type=pid)                                                                                                                                   |
+| 2023-11-26 |    Holly Jolly Fun Run     |            5k             |  15:36  |   🥈   | 1241  |   ✅   |   ✅   | [Results](https://results.raceroster.com/v2/en-CA/results/qc2qr7ea2xn6wzff/results)                                                                                                                      |
+| 2023-12-03 |    BlackToe Holidy 10k     |            10k            |  33:21  |   9   | 1204  |   ✅   |       | [Results](https://results.raceroster.com/v2/en-CA/results/mvc52u2zrfc4gbf2/results?_gl=1*186g7s6*_ga*MjgyNjA2MDY5LjE2MjM3Nzk5MTk.*_ga_1WPZ1G08ZN*MTcwMTU1MzQzMS4xLjEuMTcwMTU1MzgzMS41OS4wLjA.)           |
+| 2023-12-16 |       San Diego Half       |           Half            | 1:11:16 |  24   | 2431  |   ✅   |   ✅   | [Results](https://www.athlinks.com/event/374702/results/Event/1067333/Course/2422243/Results)                                                                                                            |
+| ---------- |       **-- 2024 --**       |             -             |
+| 2024-01-21 |       Austin 3M Half       |           Half            | 1:13:03 |  16   | 4721  |   ✅   |       | [Results](https://mychiptime.com/searchevent.php?id=15389)                                                                                                                                               |
+| 2024-03-03 |        Chilly Half         |           Half            | 1:14:34 |  26   | 2786  |   ✅   |       | [Results](https://sportstats.one/results/130407)                                                                                                                                                         |
+| 2024-03-17 | St. Patrick's Achilles 5k  |            5k             |  17:05  |   6   |  663  |   ✅   |       | [Results](https://results.raceroster.com/v2/en-CA/results/77r9ng33bzxwysem/results)                                                                                                                      |
+| 2024-04-28 |      Toronto Bum Run       |            5k             |  16:44  |   9   |  654  |   ✅   |       | [Results](https://results.raceroster.com/v2/en-CA/results/7q25eetdd7vh23ya/results?_gl=1*1uhucuu*_ga*MjgyNjA2MDY5LjE2MjM3Nzk5MTk.*_ga_1WPZ1G08ZN*MTcxNDE2OTgyNC40My4xLjE3MTQxNzAwMjIuMy4wLjA.)           |
+| 2024-05-05 |        Toronto Half        |           Half            | 1:15:13 |   4   | 7927  |   ⛔   |       | [Results](https://sportstats.one/results/130410?focus=7997&type=pid)                                                                                                                                     |
+| 2024-05-12 |     Sporting Life 10k      |            10k            |  33:57  |  37   | 16587 |   ⛔   |       | [Results](https://sportstats.one/results/140346)                                                                                                                                                         |
+| 2024-07-14 |           10KTO            |            10K            |  35:09  |  14   | 1146  |   ⛔   |       | [Results](https://sportstats.one/results/141479)                                                                                                                                                         |
+| 2024-08-08 |   BlackToe Night of PB's   |          1 Mile           | 4:48.10 |   6   |  75   |   ✅   |   ✅   | [Results](https://www.windsortiming.com/LiveResults/2024/NightofthePBs/index.php?Day=Results/240808F001.htm)                                                                                             |
+| 2024-08-08 |   BlackToe Night of PB's   |           4x400           | 3:53.29 |   🥇   |  14   |   ✅   |   ✅   | [Results](https://www.windsortiming.com/LiveResults/2024/NightofthePBs/index.php?Day=Results/240808F005.htm)                                                                                             |
+| 2024-10-20 |    TCS Waterfront Half     |           Half            | 1:16:11 |  60   | 11691 |   ⛔   |       | [Results](https://sportstats.one/results/142386)                                                                                                                                                         |
+| 2024-11-03 |  Road2Hope Hamilton Half   |           Half            | 1:15:29 |   6   | 1377  |   ✅   |       | [Results](https://results.raceroster.com/v2/en-CA/results/ze7e2rzd2dbnrmcn/detail/utuhmtnfk6b3953x)                                                                                                      |
+| 2024-11-24 |    Holly Jolly Fun Run     |            5k             |  16:18  |  17   | 1758  |   ⛔   |       | [Results](https://results.raceroster.com/v2/en-CA/results/phfbgmkqxhdj9xn3/results)                                                                                                                      |
+| 2024-12-08 |    BlackToe Holiday 10k    |            10k            |  34:30  |  28   | 1679  |   ⛔   |       | [Results](https://results.raceroster.com/v2/en-CA/results/3p23fyvd7yqz5eas/results?subEvent=219977&page=1)                                                                                               |
+| 2024-12-14 |       San Diego Half       |           Half            | 1:15:45 |  23   | 2354  |   ⛔   |       | [Results](https://www.athlinks.com/event/383495/results/Event/1068751/Course/2426541/Results)                                                                                                            |
+| ---------- |       **-- 2025 --**       |             -             |
+| 2025-02-08 |       Mesa Marathon        |         Marathon          | 2:57:29 |  157  | 3624  |   ✅   |   ✅   | [Results](https://mesamarathon.com/results?pk=7822661)                                                                                                                                                   |
+| 2025-04-27 |          Bum Run           |            5k             |
+| 2025-05-04 |        Toronto Half        |           Half            |
+| 2025-05-11 |     Sporting Life 10k      |            10k            |
+| 2025-05-25 |      Ottawa Marathon       |         Marathon          |
+| ---------- |       **-- 2026 --**       |             -             |
+| 2026-03-xx |        Chilly Half         |           Half            |
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Extract race data from the table
+  const table = document.querySelector('table');
+  const rows = Array.from(table.querySelectorAll('tr')).slice(1); // Skip header row
+  
+  // Define race name mappings for renamed races
+  const raceNameMappings = {
+    "Scotiabank Waterfront Half": "TCS Waterfront Half"
+  };
+  
+  // Define minimum date cutoff - May 1, 2014
+  const minDate = new Date('2014-05-01');
+  
+  const races = [];
+  rows.forEach(row => {
+    const cells = row.querySelectorAll('td');
+    if (cells.length >= 4) { // Ensure we have enough cells
+      const date = cells[0].textContent.trim();
+      // Skip section headers, pandemic markers and dates with invalid format
+      if (date.includes('--') || !date.match(/^\d{4}-\d{2}-\d{2}$/)) return;
+      
+      // Skip races before May 2014
+      const raceDate = new Date(date);
+      if (raceDate < minDate) return;
+      
+      let raceName = cells[1].textContent.trim();
+      // Apply race name mapping if this race has been renamed
+      raceName = raceNameMappings[raceName] || raceName;
+      
+      const distance = cells[2].textContent.trim();
+      const timeStr = cells[3].textContent.trim();
+      
+      // Parse time to seconds for graphing
+      let seconds = 0;
+      if (timeStr.includes(':')) {
+        const parts = timeStr.split(':');
+        if (parts.length === 2) {
+          seconds = parseInt(parts[0]) * 60 + parseFloat(parts[1]);
+        } else if (parts.length === 3) {
+          seconds = parseInt(parts[0]) * 3600 + parseInt(parts[1]) * 60 + parseFloat(parts[2]);
+        }
+      }
+      
+      if (seconds > 0) {
+        races.push({
+          date: raceDate,
+          name: raceName,
+          distance: distance,
+          timeSeconds: seconds,
+          timeFormatted: timeStr
+        });
+      }
+    }
+  });
+  
+  // Count race occurrences to find those run 3+ times
+  const raceCounts = {};
+  races.forEach(race => {
+    raceCounts[race.name] = (raceCounts[race.name] || 0) + 1;
+  });
+  
+  // Add options for races run 3+ times
+  const filter = document.getElementById('raceFilter');
+  Object.entries(raceCounts).forEach(([name, count]) => {
+    if (count >= 3) {
+      const option = document.createElement('option');
+      option.value = `race:${name}`;
+      option.textContent = name;
+      filter.appendChild(option);
+    }
+  });
+  
+  // Set up the chart
+  const ctx = document.getElementById('raceChart').getContext('2d');
+  let chart = null;
+  
+  function updateChart(filterValue) {
+    let filteredRaces = races;
+    let title = '';
+    
+    if (filterValue === '5k') {
+      filteredRaces = races.filter(race => race.distance === '5k');
+      title = 'All 5k Races';
+    } else if (filterValue === '10k') {
+      filteredRaces = races.filter(race => race.distance === '10k');
+      title = 'All 10k Races';
+    } else if (filterValue === 'Half') {
+      filteredRaces = races.filter(race => race.distance === 'Half');
+      title = 'All Half Marathons';
+    } else if (filterValue === 'Marathon') {
+      filteredRaces = races.filter(race => race.distance === 'Marathon');
+      title = 'All Marathons';
+    } else if (filterValue.startsWith('race:')) {
+      const raceName = filterValue.substring(5);
+      filteredRaces = races.filter(race => race.name === raceName);
+      title = raceName;
+    }
+    
+    // Sort by date
+    filteredRaces.sort((a, b) => a.date - b.date);
+    
+    // Create chart data
+    const labels = filteredRaces.map(race => race.date.toISOString().split('T')[0]);
+    const data = filteredRaces.map(race => race.timeSeconds);
+    
+    // Format y-axis time labels (MM:SS or HH:MM:SS)
+    const formatTime = (seconds) => {
+      if (seconds >= 3600) {
+        const h = Math.floor(seconds / 3600);
+        const m = Math.floor((seconds % 3600) / 60);
+        const s = Math.floor(seconds % 60);
+        return `${h}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+      } else {
+        const m = Math.floor(seconds / 60);
+        const s = Math.floor(seconds % 60);
+        return `${m}:${s.toString().padStart(2, '0')}`;
+      }
+    };
+    
+    // Destroy existing chart if it exists
+    if (chart) {
+      chart.destroy();
+    }
+    
+    // Create new chart
+    chart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: labels,
+        datasets: [{
+          label: title,
+          data: data,
+          borderColor: 'rgb(0, 128, 0)', // Green line
+          backgroundColor: 'rgb(0, 128, 0)',
+          tension: 0.1,
+          fill: false,
+          pointRadius: 6 // Larger data points
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            // Y-axis not reversed - higher times will be higher on chart
+            ticks: {
+              callback: formatTime
+            }
+          }
+        },
+        plugins: {
+          tooltip: {
+            callbacks: {
+              label: (context) => {
+                const index = context.dataIndex;
+                const race = filteredRaces[index];
+                return `${race.name} - ${race.timeFormatted}`;
+              }
+            }
+          }
+        }
+      }
+    });
+  }
+  
+  // Initial chart - default to Half Marathons
+  updateChart('Half');
+  
+  // Update chart when filter changes
+  filter.addEventListener('change', function() {
+    updateChart(this.value);
+  });
+});
+</script>
