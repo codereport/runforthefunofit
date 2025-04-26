@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function() {
             backgroundColor: colors[distanceType],
             tension: 0.1,
             fill: false,
-            pointRadius: 6,
+            pointRadius: 7,
             showLine: true
           });
         }
@@ -211,18 +211,27 @@ document.addEventListener('DOMContentLoaded', function() {
           datasets: datasets
         },
         options: {
+          font: {
+            family: "'JetBrains Mono', monospace"
+          },
           scales: {
             x: {
               type: 'linear',
-              min: 0,
-              max: dateToXPosition.size - 1,
+              min: -0.5,
+              max: dateToXPosition.size - 0.5,
               title: {
                 display: true,
-                text: 'Race Timeline'
+                text: 'Race Timeline',
+                font: {
+                  family: "'JetBrains Mono', monospace"
+                }
               },
               ticks: {
                 stepSize: 1,
-                display: false
+                display: false,
+                font: {
+                  family: "'JetBrains Mono', monospace"
+                }
               },
               grid: {
                 display: false
@@ -232,16 +241,32 @@ document.addEventListener('DOMContentLoaded', function() {
               // Not reversed - higher pace will be higher on chart
               reverse: false,
               ticks: {
-                callback: formatPace
+                callback: formatPace,
+                font: {
+                  family: "'JetBrains Mono', monospace"
+                }
               },
               title: {
                 display: true,
-                text: 'Pace (min/km)'
+                text: 'Pace (min/km)',
+                font: {
+                  family: "'JetBrains Mono', monospace"
+                }
               }
             }
           },
           plugins: {
             tooltip: {
+              titleFont: {
+                size: 18,
+                weight: 'bold',
+                family: "'JetBrains Mono', monospace"
+              },
+              bodyFont: {
+                size: 18,
+                family: "'JetBrains Mono', monospace"
+              },
+              padding: 15,
               callbacks: {
                 title: (tooltipItems) => {
                   const race = tooltipItems[0].raw.race;
@@ -259,6 +284,13 @@ document.addEventListener('DOMContentLoaded', function() {
                   return `Date: ${race.date.toISOString().split('T')[0]}`;
                 }
               }
+            }
+          },
+          elements: {
+            point: {
+              radius: 8,
+              hoverRadius: 16,
+              z: 10
             }
           }
         }
@@ -287,17 +319,38 @@ document.addEventListener('DOMContentLoaded', function() {
           }]
         },
         options: {
+          font: {
+            family: "'JetBrains Mono', monospace"
+          },
           scales: {
             y: {
               // For pace, lower is better so reverse the axis
               reverse: usePace,
               ticks: {
-                callback: usePace ? formatPace : formatTime
+                callback: usePace ? formatPace : formatTime,
+                font: {
+                  family: "'JetBrains Mono', monospace"
+                }
+              },
+              title: {
+                font: {
+                  family: "'JetBrains Mono', monospace"
+                }
               }
             }
           },
           plugins: {
             tooltip: {
+              titleFont: {
+                size: 18,
+                weight: 'bold',
+                family: "'JetBrains Mono', monospace"
+              },
+              bodyFont: {
+                size: 18,
+                family: "'JetBrains Mono', monospace"
+              },
+              padding: 10,
               callbacks: {
                 label: (context) => {
                   const index = context.dataIndex;
