@@ -122,7 +122,8 @@ document.addEventListener('DOMContentLoaded', function() {
       filteredRaces = races.filter(race => 
         race.distance === '5k' || 
         race.distance === '10k' || 
-        race.distance === 'Half'
+        race.distance === 'Half' ||
+        race.distance === 'Marathon'
       );
       title = 'All Races (Pace)';
       showMultipleDistances = true;
@@ -152,12 +153,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (showMultipleDistances) {
       // Group races by distance
-      const raceTypes = ['5k', '10k', 'Half'];
+      const raceTypes = ['5k', '10k', 'Half', 'Marathon'];
       const datasets = [];
       const colors = {
         '5k': 'rgb(0, 128, 255)', // Blue
         '10k': 'rgb(255, 0, 0)',  // Red
-        'Half': 'rgb(0, 128, 0)'   // Green
+        'Half': 'rgb(0, 128, 0)',   // Green
+        'Marathon': 'rgb(238, 32, 238)'  // Purple
       };
       
       // Create a unified chronological list of all races
