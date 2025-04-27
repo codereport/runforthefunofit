@@ -106,7 +106,7 @@ List of all races.
 | 2024-12-14 |       San Diego Half       |           Half            | 1:15:45 |  23   | 2354  |   ⛔   |       | [Results](https://www.athlinks.com/event/383495/results/Event/1068751/Course/2426541/Results)                                                                                                            |
 | ---------- |       **-- 2025 --**       |             -             |
 | 2025-02-08 |       Mesa Marathon        |         Marathon          | 2:57:29 |  157  | 3624  |   ✅   |   ✅   | [Results](https://mesamarathon.com/results?pk=7822661)                                                                                                                                                   |
-| 2025-04-27 |          Bum Run           |            5k             |
+| 2025-04-27 |          Bum Run           |            5k             |  17:17  |  16   |  551  |   ⛔   |       | [Results](https://results.raceroster.com/v2/en-CA/results/uu3h2d2m37kyenv3/detail/ny5fs9pve7vm9qne)                                                                                                      |
 | 2025-05-04 |        Toronto Half        |           Half            |
 | 2025-05-11 |     Sporting Life 10k      |            10k            |
 | 2025-05-25 |      Ottawa Marathon       |         Marathon          |

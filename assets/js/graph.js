@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function() {
         '5k': 'rgb(0, 128, 255)', // Blue
         '10k': 'rgb(255, 0, 0)',  // Red
         'Half': 'rgb(0, 128, 0)',   // Green
-        'Marathon': 'rgb(238, 32, 238)'  // Purple
+        'Marathon': 'rgb(238, 32, 238)'  // Pink
       };
       
       // Create a unified chronological list of all races
