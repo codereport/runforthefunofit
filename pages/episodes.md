@@ -9,6 +9,7 @@ List of all episodes.
 
 |   #   |                                                           Title                                                            | Release Date |
 | :---: | :------------------------------------------------------------------------------------------------------------------------: | :----------: |
+|  30   |                   [2025 Boston, London & Bum Run! 🎽🎽🎽](https://r4podcast.com/2025/05/03/Episode-30.html)                   |  2025-05-03  |
 |  29   |         [Corey or Rory ⛳? GST 🇯🇲, Shoe Talk 👟 & Upcoming Races!](https://r4podcast.com/2025/04/22/Episode-29.html)          |  2025-04-22  |
 |  28   |           [Chilly Half 🥶, Tokyo Marathon 🇯🇵 & Upcoming Races!](https://r4podcast.com/2025/04/04/Episode-28.html)            |  2025-04-04  |
 |  27   |                 [🥳 2025 Mesa Marathon Bachelor Party! 🥳](https://r4podcast.com/2025/02/15/Episode-27.html)                 |  2025-02-15  |
