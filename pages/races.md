@@ -109,7 +109,7 @@ List of all races.
 | 2025-04-27 |      Toronto Bum Run       |            5k             |  17:17  |  16   |  656  |   ⛔   |       | [Results](https://results.raceroster.com/v2/en-CA/results/uu3h2d2m37kyenv3/detail/ny5fs9pve7vm9qne)                                                                                                      |
 | 2025-05-04 |        Toronto Half        |           Half            | 1:18:19 |  29   | 8539  |   ⛔   |       | [Results](https://sportstats.one/results/143241)                                                                                                                                                         |
 | 2025-05-11 |     Sporting Life 10k      |            10k            |  34:34  |  47   | 20035 |   ⛔   |       | [Results](https://sportstats.one/results/143421)                                                                                                                                                         |
-| 2025-05-25 |      Ottawa Marathon       |         Marathon          |
+| 2025-05-25 |      Ottawa Marathon       |         Marathon          | 3:03:33 |  210  | 3198  |   ✅   |       | [Results](https://sportstats.one/event/ottawa-race-weekend/leaderboard/143802)                                                                                                                           |
 | ---------- |       **-- 2026 --**       |             -             |
 | 2026-03-xx |        Chilly Half         |           Half            |
 
