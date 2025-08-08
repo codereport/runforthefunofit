@@ -110,6 +110,7 @@ List of all races.
 | 2025-05-04 |        Toronto Half        |           Half            | 1:18:19 |  29   | 8539  |   ⛔   |       | [Results](https://sportstats.one/results/143241)                                                                                                                                                         |
 | 2025-05-11 |     Sporting Life 10k      |            10k            |  34:34  |  47   | 20035 |   ⛔   |       | [Results](https://sportstats.one/results/143421)                                                                                                                                                         |
 | 2025-05-25 |      Ottawa Marathon       |         Marathon          | 3:03:33 |  210  | 3198  |   ✅   |       | [Results](https://sportstats.one/event/ottawa-race-weekend/leaderboard/143802)                                                                                                                           |
+| 2025-08-07 |     Sunset Shuffle 5k      |            5k             |  16:57  |  13   |  410  |   ✅   |       | [Results](https://results.raceroster.com/v2/en-CA/results/ng9gdy5nr5p6e4gs/results)                                                                                                                      |
 | ---------- |       **-- 2026 --**       |             -             |
 | 2026-03-xx |        Chilly Half         |           Half            |
 
