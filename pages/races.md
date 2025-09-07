@@ -113,7 +113,7 @@ List of all races.
 | 2025-08-07 |     Sunset Shuffle 5k      |            5k             |  16:57  |  13   |  410  |   ✅   |       | [Results](https://results.raceroster.com/v2/en-CA/results/ng9gdy5nr5p6e4gs/results)                                                                                                                      |
 | 2025-08-16 |  Tracksmith Twilight 5000  |            5k             |  17:03  |  26   |  279  |   ⛔   |       | [Reults](https://results.raceroster.com/v2/en-US/results/evstdp4z4gf7qmfw/detail/4gufp2gz5ubb46gq)                                                                                                       |
 | 2025-08-23 |       SuperPower 5k        |            5k             |  16:36  |   🥇   |  518  |   ⛔   |       | [Results](https://results.raceroster.com/v2/en-CA/results/nf3nah7nfb5n2xcb/detail/qvj3g9yua35taypf)                                                                                                      |
-| 2025-09-07 |        Yorkville 5k        |            5k             |
+| 2025-09-07 |        Yorkville 5k        |            5k             |  16:33  |  19   |  778  |   ✅   |       | [Results](https://results.raceroster.com/v2/en-US/results/vwcx3rhaaxdy3sey/detail/ckchavb9bczcufxx)                                                                                                      |
 | ---------- |       **-- 2026 --**       |             -             |
 | 2026-03-01 |        Chilly Half         |           Half            |
 
