@@ -116,6 +116,7 @@ List of all races.
 | 2025-09-07 |        Yorkville 5k        |            5k             |  16:33  |  19   |  778  |   ✅   |       | [Results](https://results.raceroster.com/v2/en-US/results/vwcx3rhaaxdy3sey/detail/ckchavb9bczcufxx)                                                                                                      |
 | 2025-09-26 |     Brita Night Run 5k     |            5k             |  16:47  |   🥇   | 1211  |   ✅   |       | [Results](https://startlinetiming.com/en/races/2025/nr_toronto/event/5K)                                                                                                                                 |
 | 2025-10-19 |      Art in Motion 5k      |            5k             |  17:29  |   🥇   |  108  |   ✅   |       | [Results](https://runsignup.com/Race/Results/120307/IndividualResult/RJKcB?resultSetId=596789#U112671859)                                                                                                |
+| 2025-10-26 |      Niagara Marathon      |         Marathon          | 2:42:01 |   5   |  969  |   ✅   |   ✅   | [Results](https://sportstats.one/event/niagara-falls-international-marathon/leaderboard/144824)                                                                                                          |
 | ---------- |       **-- 2026 --**       |             -             |
 | 2026-03-01 |        Chilly Half         |           Half            |
 
