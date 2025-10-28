@@ -9,6 +9,7 @@ List of all episodes.
 
 |   #   |                                                           Title                                                            | Release Date |
 | :---: | :------------------------------------------------------------------------------------------------------------------------: | :----------: |
+|  32   |              [Grand Slam Track Philly + Ottawa Marathon! 🎉](https://r4podcast.com/2025/10/28/Episode-32.html)              |  2025-10-28  |
 |  31   |              [YüBaí Races 10k! 🏅 Ottawa Marathon + More! 🥳](https://r4podcast.com/2025/05/24/Episode-31.html)              |  2025-05-24  |
 |  30   |            [2025 Boston, London, Bum Run & Spin Class! 🎽🎽🎽🚴‍♂️](https://r4podcast.com/2025/05/03/Episode-30.html)             |  2025-05-03  |
 |  29   |         [Corey or Rory ⛳? GST 🇯🇲, Shoe Talk 👟 & Upcoming Races!](https://r4podcast.com/2025/04/22/Episode-29.html)          |  2025-04-22  |
