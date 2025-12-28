@@ -9,6 +9,7 @@ List of all episodes.
 
 |   #   |                                                           Title                                                            | Release Date |
 | :---: | :------------------------------------------------------------------------------------------------------------------------: | :----------: |
+|  33   |                 [Where is Grant 🐟️er? (GST Philly Day 2)](https://r4podcast.com/2025/12/28/Episode-33.html)                 |  2025-12-28  |
 |  32   |              [Grand Slam Track Philly + Ottawa Marathon! 🎉](https://r4podcast.com/2025/10/28/Episode-32.html)              |  2025-10-28  |
 |  31   |              [YüBaí Races 10k! 🏅 Ottawa Marathon + More! 🥳](https://r4podcast.com/2025/05/24/Episode-31.html)              |  2025-05-24  |
 |  30   |            [2025 Boston, London, Bum Run & Spin Class! 🎽🎽🎽🚴‍♂️](https://r4podcast.com/2025/05/03/Episode-30.html)             |  2025-05-03  |
