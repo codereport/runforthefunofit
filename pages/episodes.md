@@ -9,6 +9,7 @@ List of all episodes.
 
 |   #   |                                                           Title                                                            | Release Date |
 | :---: | :------------------------------------------------------------------------------------------------------------------------: | :----------: |
+|  34   |       [MARRIED 🤵, 2:42 Marathon PB, 3 5K Wins 🥇🥇🥇 & 17:02 5K PB!](https://r4podcast.com/2025/02/28/Episode-34.html)        |  2026-02-28  |
 |  33   |                 [Where is Grant 🐟️er? (GST Philly Day 2)](https://r4podcast.com/2025/12/28/Episode-33.html)                 |  2025-12-28  |
 |  32   |              [Grand Slam Track Philly + Ottawa Marathon! 🎉](https://r4podcast.com/2025/10/28/Episode-32.html)              |  2025-10-28  |
 |  31   |              [YüBaí Races 10k! 🏅 Ottawa Marathon + More! 🥳](https://r4podcast.com/2025/05/24/Episode-31.html)              |  2025-05-24  |
