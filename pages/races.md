@@ -118,7 +118,11 @@ List of all races.
 | 2025-10-19 |      Art in Motion 5k      |            5k             |  17:29  |   🥇   |  108  |   ✅   |       | [Results](https://runsignup.com/Race/Results/120307/IndividualResult/RJKcB?resultSetId=596789#U112671859)                                                                                                |
 | 2025-10-26 |      Niagara Marathon      |         Marathon          | 2:42:01 |   5   |  969  |   ✅   |   ✅   | [Results](https://sportstats.one/event/niagara-falls-international-marathon/leaderboard/144824)                                                                                                          |
 | ---------- |       **-- 2026 --**       |             -             |
-| 2026-03-01 |        Chilly Half         |           Half            |
+| 2026-04-03 |       Good Friday 5k       |            5k             |  17:19  |   🥉   |  236  |   ✅   |       | [Results](https://results.raceroster.com/v3/events/uvy7uvr4bmdx7g3b/race/254476?filter_search=)                                                                                                          |
+| 2026-04-18 |        Westport 10k        |            10k            |
+| 2026-05-03 |        Toronto Half        |           Half            |
+| 2026-05-10 |     Sporting Life 10k      |            10k            |
+| 2026-06-21 | Waterford Viking Marathon  |         Marathon          |
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
