@@ -122,6 +122,7 @@ List of all races.
 | 2026-04-18 |        Westport 10k        |            10k            |
 | 2026-05-03 |        Toronto Half        |           Half            |
 | 2026-05-10 |     Sporting Life 10k      |            10k            |
+| 2026-06-07 |      Honda Waterfront      |            5k             |
 | 2026-06-21 | Waterford Viking Marathon  |         Marathon          |
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
