@@ -466,10 +466,29 @@ document.addEventListener('DOMContentLoaded', function() {
     rowData.forEach(item => {
       if (item.row.style.display === 'none') tbody.appendChild(item.row);
     });
+    updateRowNumbers();
   }
 
   function restoreOriginalOrder() {
     originalOrder.forEach(row => tbody.appendChild(row));
+    updateRowNumbers();
+  }
+
+  function updateRowNumbers() {
+    table.querySelectorAll('.row-num').forEach(el => el.remove());
+    if (sortState.col === -1) return;
+    const th = document.createElement('th');
+    th.className = 'row-num';
+    th.textContent = '#';
+    headerRow.insertBefore(th, headerRow.firstChild);
+    let num = 1;
+    Array.from(table.rows).forEach((row, i) => {
+      if (i === 0) return;
+      const td = document.createElement('td');
+      td.className = 'row-num';
+      if (row.style.display !== 'none') td.textContent = num++;
+      row.insertBefore(td, row.firstChild);
+    });
   }
 
   function updateSortIndicators() {
@@ -504,7 +523,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const sortStyle = document.createElement('style');
   sortStyle.textContent = 'table th:hover{background:rgba(0,0,0,.06);transition:background .15s}' +
-    '.sort-arrow{font-size:.7em;vertical-align:middle}';
+    '.sort-arrow{font-size:.7em;vertical-align:middle}' +
+    '.row-num{text-align:center;color:#999;min-width:1.5em}';
   document.head.appendChild(sortStyle);
 
   // Initial state
