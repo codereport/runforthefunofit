@@ -380,11 +380,139 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
   
-  // Initial chart - default to All Races
+  // === TABLE FILTERING & SORTING ===
+
+  const allTableRows = Array.from(table.querySelectorAll('tr'));
+  const headerRow = allTableRows[0];
+  const bodyRows = allTableRows.slice(1);
+  const originalOrder = bodyRows.slice();
+  const tbody = table.querySelector('tbody') || table;
+
+  const rowData = bodyRows.map(row => {
+    const cells = Array.from(row.querySelectorAll('td'));
+    const dateText = cells[0]?.textContent.trim() || '';
+    const nameText = cells[1]?.textContent.trim() || '';
+    const distanceText = cells[2]?.textContent.trim() || '';
+
+    if (!dateText.match(/^\d{4}-\d{2}-\d{2}$/)) {
+      return { type: 'divider', row };
+    }
+
+    return {
+      type: 'data', row, cells,
+      date: dateText,
+      mappedName: raceNameMappings[nameText] || nameText,
+      distance: distanceText
+    };
+  });
+
+  function parseTimeSort(str) {
+    if (!str || !str.includes(':')) return Infinity;
+    const p = str.split(':');
+    if (p.length === 2) return parseInt(p[0]) * 60 + parseFloat(p[1]);
+    if (p.length === 3) return parseInt(p[0]) * 3600 + parseInt(p[1]) * 60 + parseFloat(p[2]);
+    return Infinity;
+  }
+
+  function parseNumSort(str) {
+    if (!str || str === '-') return Infinity;
+    if (str.includes('\u{1F947}')) return 1;
+    if (str.includes('\u{1F948}')) return 2;
+    if (str.includes('\u{1F949}')) return 3;
+    const n = parseInt(str);
+    return isNaN(n) ? Infinity : n;
+  }
+
+  let activeFilter = 'AllRaces';
+  let sortState = { col: -1, dir: 'none' };
+
+  function filterTable(filterValue) {
+    activeFilter = filterValue;
+    rowData.forEach(item => {
+      if (item.type === 'divider') {
+        item.row.style.display = (filterValue === 'AllRaces' && sortState.col === -1) ? '' : 'none';
+        return;
+      }
+      let show = true;
+      if (filterValue === '5k') show = item.distance === '5k';
+      else if (filterValue === '10k') show = item.distance === '10k';
+      else if (filterValue === 'Half') show = item.distance === 'Half';
+      else if (filterValue === 'Marathon') show = item.distance === 'Marathon';
+      else if (filterValue.startsWith('race:')) show = item.mappedName === filterValue.substring(5);
+      item.row.style.display = show ? '' : 'none';
+    });
+    if (sortState.col !== -1) applySortToDOM();
+    else restoreOriginalOrder();
+  }
+
+  function applySortToDOM() {
+    rowData.forEach(item => {
+      if (item.type === 'divider') item.row.style.display = 'none';
+    });
+    const visible = rowData.filter(item => item.type === 'data' && item.row.style.display !== 'none');
+    visible.sort((a, b) => {
+      const col = sortState.col;
+      const tA = a.cells[col]?.textContent.trim() || '';
+      const tB = b.cells[col]?.textContent.trim() || '';
+      let cmp = 0;
+      if (col === 0) cmp = tA.localeCompare(tB);
+      else if (col === 2) cmp = (distanceValues[tA] || 0) - (distanceValues[tB] || 0);
+      else if (col === 3) cmp = parseTimeSort(tA) - parseTimeSort(tB);
+      else if (col === 4 || col === 5) cmp = parseNumSort(tA) - parseNumSort(tB);
+      else cmp = tA.localeCompare(tB);
+      return sortState.dir === 'desc' ? -cmp : cmp;
+    });
+    visible.forEach(item => tbody.appendChild(item.row));
+    rowData.forEach(item => {
+      if (item.row.style.display === 'none') tbody.appendChild(item.row);
+    });
+  }
+
+  function restoreOriginalOrder() {
+    originalOrder.forEach(row => tbody.appendChild(row));
+  }
+
+  function updateSortIndicators() {
+    headerRow.querySelectorAll('th').forEach((th, i) => {
+      const existing = th.querySelector('.sort-arrow');
+      if (existing) existing.remove();
+      if (i === sortState.col && sortState.dir !== 'none') {
+        const span = document.createElement('span');
+        span.className = 'sort-arrow';
+        span.textContent = sortState.dir === 'asc' ? ' \u25B2' : ' \u25BC';
+        th.appendChild(span);
+      }
+    });
+  }
+
+  headerRow.querySelectorAll('th').forEach((th, index) => {
+    th.style.cursor = 'pointer';
+    th.style.userSelect = 'none';
+    th.addEventListener('click', () => {
+      if (sortState.col === index) {
+        if (sortState.dir === 'asc') sortState.dir = 'desc';
+        else { sortState.col = -1; sortState.dir = 'none'; }
+      } else {
+        sortState.col = index;
+        sortState.dir = 'asc';
+      }
+      updateSortIndicators();
+      if (sortState.col === -1) filterTable(activeFilter);
+      else applySortToDOM();
+    });
+  });
+
+  const sortStyle = document.createElement('style');
+  sortStyle.textContent = 'table th:hover{background:rgba(0,0,0,.06);transition:background .15s}' +
+    '.sort-arrow{font-size:.7em;vertical-align:middle}';
+  document.head.appendChild(sortStyle);
+
+  // Initial state
   updateChart('AllRaces');
-  
-  // Update chart when filter changes
+  filterTable('AllRaces');
+
   filter.addEventListener('change', function() {
     updateChart(this.value);
+    filterTable(this.value);
   });
-}); 
+});
