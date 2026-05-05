@@ -492,7 +492,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function updateSortIndicators() {
-    headerRow.querySelectorAll('th').forEach((th, i) => {
+    headerRow.querySelectorAll('th:not(.row-num)').forEach((th, i) => {
       const existing = th.querySelector('.sort-arrow');
       if (existing) existing.remove();
       if (i === sortState.col && sortState.dir !== 'none') {
