@@ -121,7 +121,7 @@ List of all races.
 | ---------- |       **-- 2026 --**       |             -             |
 | 2026-04-03 |       Good Friday 5k       |            5k             |  17:19  |   🥉   |  236  |   ✅   |       | [Results](https://results.raceroster.com/v3/events/uvy7uvr4bmdx7g3b/race/254476?filter_search=)                                                                                                          |
 | 2026-05-03 |        Toronto Half        |           Half            | 1:17:59 |  19   | 11982 |   ⛔   |       | [Results](https://sportstats.one/event/toronto-marathon/leaderboard/145788)                                                                                                                              |
-| 2026-05-10 |     Sporting Life 10k      |            10k            |
+| 2026-05-10 |     Sporting Life 10k      |            10k            |  33:59  |  33   | 23940 |   ⛔   |       | [Results](https://sportstats.one/event/sporting-life-10k-toronto/leaderboard/145797)                                                                                                                     |
 | 2026-06-07 |      Honda Waterfront      |            5k             |
 | 2026-06-21 | Waterford Viking Marathon  |         Marathon          |
 
